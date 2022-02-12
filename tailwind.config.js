@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'press-start': ['"Bree Serif"', 'serif']
+        'press-start': ['"Bree Serif"', 'serif'],
+        'Baloo': ['"Baloo Bhaijaan 2", cursive']
       }
     },
   },
