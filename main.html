@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOGA ACTIVITY</title>
+    <script src="Database.js"></script>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+    <section class="m-0 p-0 bg-gradient-to-r from-blue-500 via-blue-350 via-violet-350 to-purple-600 h-[100] p-[66px]">
+        <div class="container w-[80%] h-[500px] ml-[10%] bg-slate-400 pt-[25px] bg-opacity-70 rounded-2xl">
+            <a href="/index.html"><i class="fa fa-arrow-circle-o-left float-right mr-[20px] mt-[-10px] cursor-pointer" style="font-size:36px"></i></a>
+            <div class="main mx-[350px]">
+                <div class="name"><b><h1 id ="name" class="text-xl "></h1></b></div>
+                <div class="img w-[150px] h-[150px] mx-[-45px] mt-[100px] "><img src="" alt="" srcset="" id="img"></div>
+            </div>
+            <!--This is old html by Aradhya
+            <div class="controller">
+                <dic class="timer"><p id="timing" ></p></dic>
+                <div id="buttons" class="flex sticky mx-72 mt-[150px] ">
+                    <div class="back" onclick=gar.reset()><i></i></div>
+                    <div class="pause"><i></i></div>
+                    <div class="next"><i></i></div>
+                </div>
+
+            </div>-->
+        </div>
+
+        <!--This is New Buttons I have made-->
+        <div id="bottom" class="mx-[42%] w-[150px] text-center ">
+            <div class="timer"><p id="timing">Timer here</p>
+            </div>
+            <div class="buttons flex gap-10 text-center ml-[-20px]">
+                <i class="fa fa-3x fa-step-backward cursor-pointer" aria-hidden="true" id="previous"></i>
+                <i class="fa fa-3x fa-pause-circle cursor-pointer"  id="masterPlay" aria-hidden="true"></i>
+                <i class="fa fa-3x fa-step-forward cursor-pointer" aria-hidden="true" id="next"></i>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
