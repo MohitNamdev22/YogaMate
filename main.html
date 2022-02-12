@@ -17,7 +17,7 @@
 <body class="">
     <section class="m-0 p-0 bg-gradient-to-r from-blue-500 via-blue-350 via-violet-350 to-purple-600 h-[100] p-[66px]">
         <div class="container w-[80%] h-[500px] ml-[10%] bg-slate-400 pt-[25px] bg-opacity-70 rounded-2xl">
-            <a href="/index.html"><i class="fa fa-arrow-circle-o-left float-right mr-[20px] mt-[-10px] cursor-pointer" style="font-size:36px"></i></a>
+            <a href="/index.html"><i class="fa fa-arrow-circle-o-left float-right mr-[20px] mt-[-10px] cursor-pointer" id="back" style="font-size:36px"></i></a>
             <div class="main mx-[350px]">
                 <div class="name"><b><h1 id ="name" class="text-xl "></h1></b></div>
                 <div class="img w-[150px] h-[150px] mx-[-45px] mt-[100px] "><img src="" alt="" srcset="" id="img"></div>
@@ -36,12 +36,13 @@
 
         <!--This is New Buttons I have made-->
         <div id="bottom" class="mx-[42%] w-[150px] text-center ">
-            <div class="timer"><p id="timing">Timer here</p>
+            <div>
+                <a href="" id="ytd">Click</a>
             </div>
             <div class="buttons flex gap-10 text-center ml-[-20px]">
-                <i class="fa fa-3x fa-step-backward cursor-pointer" aria-hidden="true" id="previous"></i>
+                <i class="fa fa-3x fa-step-backward cursor-pointer" aria-hidden="true" id="previous" onclick="gar.prev()"></i>
                 <i class="fa fa-3x fa-pause-circle cursor-pointer"  id="masterPlay" aria-hidden="true"></i>
-                <i class="fa fa-3x fa-step-forward cursor-pointer" aria-hidden="true" id="next"></i>
+                <i class="fa fa-3x fa-step-forward cursor-pointer" aria-hidden="true" id="next" onclick="gar.next()"></i>
             </div>
         </div>
     </section>

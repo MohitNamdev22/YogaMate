@@ -1,35 +1,30 @@
-
 //by Aradhya Tiwari
 let img = document.getElementById("img");
-let name = document.getElementById("name");
+let namee = document.getElementById("name");
 let obj = JSON.parse(JSON.stringify(data))
+let timing = document.getElementById("timing");
+let desc = document.getElementById("ytd");
 class yog{
     constructor(pose){
         this.pose = pose
-        let current = this.pose
-        this.current = current
     }
-    main(){
-        if(this.pose == 10) return
-        console.log(obj.result[this.pose].id);
-        this.pose++
-        img.src=obj.result[this.pose].img_url
-        name.innerHTML = obj.result[this.pose].sanskrit_name
-        setTimeout(()=>{this.main()}, 2000);
+    update(a){
+        this.pose+=a;
+        img.src=obj.result[this.pose].img_url;
+        namee.innerHTML = obj.result[this.pose].sanskrit_name;
+        desc.href = obj.result[this.pose].youtube_link;
     }
     next(){
-        this.pose+=1
+        this.update(-1);
     }
     prev(){
-        this.pose-=1
+        this.update(1);
     }
     reset(){
         this.pose = this.current
-        this.main()
+        this.timer()
     }
 }
 
-let gar = new yog(0);
-gar.main();
-
-
+let gar = new yog(48);
+gar.update(-1);
